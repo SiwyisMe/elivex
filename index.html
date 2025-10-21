@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elivex - Under Development.</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+      .bg-pattern {
+        background-image: radial-gradient(
+          rgba(0, 0, 0, 0.1) 2px,
+          transparent 2px
+        );
+        background-size: 40px 40px;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .animate-pulse-slow {
+        animation: pulse 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-indigo-50 to-blue-100 min-h-screen bg-pattern"
+  >
+    <div class="container mx-auto px-4 py-16 sm:py-24 lg:py-32">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="flex justify-center mb-8 animate-pulse-slow">
+          <div class="bg-white p-4 rounded-full shadow-xl">
+            <object
+              data="logo.svg"
+              type="image/svg+xml"
+              class="w-16 h-16 text-indigo-600"
+            >
+              <img src="logo.png" />
+            </object>
+          </div>
+        </div>
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+        >
+          Elivex
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-600 mb-8">
+          We're building something extraordinary for you!
+        </p>
+
+        <div
+          class="bg-white/80 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg max-w-2xl mx-auto mb-12"
+        >
+          <div class="flex items-center justify-center mb-4">
+            <div
+              class="h-3 w-3 bg-yellow-400 rounded-full mr-2 animate-pulse"
+            ></div>
+            <div class="text-lg font-medium text-gray-700">
+              Website Under Construction
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Our team is working hard to create a powerful digital experience.
+            We'll be launching soon with innovative solutions for your business.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="mailto:Contact@elivex.site"
+              class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-all flex items-center justify-center gap-2"
+            >
+              <i data-feather="mail" class="w-5 h-5"></i>
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 flex justify-center space-x-6">
+          <a
+            href="https://www.facebook.com/profile.php?id=Elivex"
+            class="text-gray-500 hover:text-indigo-600 transition-colors"
+          >
+            <i data-feather="facebook" class="w-6 h-6"></i>
+          </a>
+          <a
+            href="https://x.com/ElivexServices"
+            class="text-gray-500 hover:text-indigo-600 transition-colors"
+          >
+            <i data-feather="twitter" class="w-6 h-6"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/elivexservices/"
+            class="text-gray-500 hover:text-indigo-600 transition-colors"
+          >
+            <i data-feather="instagram" class="w-6 h-6"></i>
+          </a>
+        </div>
+
+        <div class="mt-16 text-sm text-gray-500">
+          © 2025 Elivex. All rights reserved.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(
+          ".animate-pulse-slow, .animate-pulse"
+        );
+        elements.forEach((el) => {
+          el.style.animationDelay = `${Math.random() * 2}s`;
+        });
+      });
+    </script>
+  </body>
+</html>
